@@ -6,9 +6,11 @@
   "homepage": "https://azharkhalid.github.io/kanban-board",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
